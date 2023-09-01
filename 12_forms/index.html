@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="POST">
+    <form action="index.php" method="POST" enctype="multipart/form-data">
         <label for="username">username:</label>
         <input type="text" id="username" placeholder="Username..." minlength="6" maxlength="15" required>
         
@@ -22,6 +22,44 @@
         <br><br>
         <label for="phone">phone:</label>
         <input type="tel" id="phone" placeholder="1234-5678" pattern="[0-9]{4}-[0-9]{4}">
+
+        <br><br>
+        <label for ="bday">birthdate:</label>
+        <input type="date" id="bday">
+
+        <br><br>
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1">
+
+        <br><br>
+        <label for="title">title:</label>
+
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." value="Ms." name="title">
+        <label for="Mr.">PhD.</label>
+        <input type="radio" id="PhD." value="PhD" name="title">
+
+        <br><br>
+        <label for="payment">payment:</label>
+        <select>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="giftcard">Giftcard</option>
+        </select>
+
+        <br><br>
+        <label for="comment">comment</label>
+        <textarea id="comment" rows="3" cols="25" placeholder="Add your comment"></textarea>
+
+        <br><br>
+        <label for="subscribe">subscribe</label>
+        <input type="checkbox" id="subscribe">
+
+        <br><br>
+        <label for="file">file:</label>       
+        <input type="file" id="file" accept="image/png, image/jpeg">
 
         <br><br>
         <input type="submit">
