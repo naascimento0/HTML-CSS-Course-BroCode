@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <a href = "https://www.youtube.com/" target = "_blank">
+            <button onclick = "doSomething()" style = "font-size: 25px; background-color:brown; color: lightblue; border-radius: 5px;">click me</button>
+        </a>
+
+        <a href = "page2.html" target = "_blank">
+            <button style = "font-size: 25px; background-color:rgb(42, 165, 108); color: rgb(188, 173, 230); border-radius: 5px;">click me</button>
+        </a>
+
+        <p id = "greeting"> Hello</p>
+
+        <script> <!--java script-->
+            function doSomething(){ 
+                document.getElementById("greeting").innerHTML = "Goodbye"
+            }
+        </script>
+    </body>
+</html>
